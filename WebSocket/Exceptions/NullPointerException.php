@@ -1,6 +1,6 @@
 <?php
 
-namespace WS\Exceptions;
+namespace WebSocket\Exceptions;
 
 use Exception;
 

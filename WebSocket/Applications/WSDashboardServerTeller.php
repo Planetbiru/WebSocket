@@ -1,15 +1,15 @@
 <?php
 
-namespace WS\Applications;
+namespace WebSocket\Applications;
 
 use Exception;
 use MagicObject\Database\PicoDatabase;
 use MagicObject\Database\PicoDatabaseQueryBuilder;
-use WS\PicoWebSocket\AuthorizationBasic;
-use WS\PicoWebSocket\WSClient;
-use WS\PicoWebSocket\WSInterface;
-use WS\PicoWebSocket\WSServer;
-use WS\PicoWebSocket\WSUtility;
+use WebSocket\PicoWebSocket\AuthorizationBasic;
+use WebSocket\PicoWebSocket\WSClient;
+use WebSocket\PicoWebSocket\WSInterface;
+use WebSocket\PicoWebSocket\WSServer;
+use WebSocket\PicoWebSocket\WSUtility;
 
 class WSDashboardServerTeller extends WSServer implements WSInterface
 {

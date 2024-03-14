@@ -1,9 +1,9 @@
 <?php
 
-namespace WS\PicoWebSocket;
+namespace WebSocket\PicoWebSocket;
 
 use Exception;
-use WS\Exceptions\InvalidPayloadException;
+use WebSocket\Exceptions\InvalidPayloadException;
 
 class WSUtility
 {
@@ -36,8 +36,8 @@ class WSUtility
 
 		$firstLine = $arr[0];
 		$arr4 = explode(" ", $firstLine);
-		$method = @$arr4[0];
-		$version = @$arr4[2];
+		$method = isset($arr4[0]) ? strtoupper($arr4[0]) : null;
+		$version = isset($arr4[2]) ? $arr4[2] : null;
 		$path = '/';
 		$requestURL = '/';
 		$query = array();
@@ -60,7 +60,7 @@ class WSUtility
 		}
 		
 		return array(
-			'method' => $arr4[0], 
+			'method' => $method, 
 			'uri' => $requestURL, 
 			'path' => $path, 
 			'query' => $query, 

@@ -1,5 +1,5 @@
 <?php
-namespace WS\PicoWebSocket;
+namespace WebSocket\PicoWebSocket;
 
 use Exception;
 use Throwable;

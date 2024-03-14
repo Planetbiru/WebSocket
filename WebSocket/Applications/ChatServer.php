@@ -1,9 +1,9 @@
 <?php
 
-namespace Applications;
+namespace WebSocket\Applications;
 
-use WS\PicoWebSocket\WSInterface;
-use WS\PicoWebSocket\WSServer;
+use WebSocket\PicoWebSocket\WSInterface;
+use WebSocket\PicoWebSocket\WSServer;
 
 class ChatServer extends WSServer implements WSInterface
 {

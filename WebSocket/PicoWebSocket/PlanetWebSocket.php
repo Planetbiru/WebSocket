@@ -1,6 +1,6 @@
 <?php
 
-namespace WS\PicoWebSocket;
+namespace WebSocket\PicoWebSocket;
 
 class PlanetWebSocket
 {
