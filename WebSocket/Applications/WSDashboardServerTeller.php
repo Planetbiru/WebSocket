@@ -33,7 +33,7 @@ class WSDashboardServerTeller extends WSServer implements WSInterface
 	 * @param string $host
 	 * @param integer $port
 	 */
-	public function __construct($host = '127.0.0.1', $port = 8080, $conf, $dbconf)
+	public function __construct($conf, $dbconf, $host = '127.0.0.1', $port = 8080)
 	{
 		parent::__construct($host, $port, $conf->getSessionSavePath(), $conf->getSessionFilePrefix(), $conf->getSessionCookieName());
 		$this->conf = $conf;
